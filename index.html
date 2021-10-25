@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/TTNorms-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/TTNorms-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/report.css">
+
+    <script defer src="js/script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <h1 class="header__title">Страница учета по калибровкам прибора</h1>
+                <form action="#" method="POST" class="header__form">
+                    <label class="header__label">
+                        <p class="header__label-text">
+                            Enter inventory number, guid or bims id
+                        </p>
+                        <input type="text" placeholder="A-001234" class="header__input">
+                    </label>
+                    <button class="header__button">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__container">
+                    <div class="hero__equipment-info">
+                        <div class="hero__unit-name">
+                            <div class="hero__unit-descr">
+                                <p class="hero__unit-descr-text">
+                                    Аналитические весы OHAUS Adventurer AX324 (B715976163)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="hero__report-filters">
+                            <select name="select" id="selectCustom" class="hero__select">
+                                <option value="">1 month</option>
+                                <option value="">2 month</option>
+                                <option value="">3 month</option>
+                            </select>
+
+                            <form action="#" method="post" class="hero__form">
+                                <div class="hero__labels-container">
+                                    <label class="hero__form-label">
+                                        <input type="checkbox" class="hero__form-input">
+                                        <span class="hero__form-checkbox"></span>
+                                        Calibration
+                                    </label>
+
+                                    <label class="hero__form-label">
+                                        <input type="checkbox" class="hero__form-input">
+                                        <span class="hero__form-checkbox"></span>
+                                        Measuring
+                                    </label>
+
+                                    <label class="hero__form-label">
+                                        <input type="checkbox" class="hero__form-input">
+                                        <span class="hero__form-checkbox"></span>
+                                        Using
+                                    </label>
+                                </div>
+                                <button class="hero__form-button">Generate report</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="hero__device-info">
+                        <ul class="hero__device-info-list">
+                            <li class="hero__device-info-item">
+                                <span class="hero__device-points">Тип оборудования: </span>
+
+                                <span class="hero__device-points-descr">Весы</span>
+                            </li>
+
+                            <li class="hero__device-info-item">
+                                <span class="hero__device-points">Статус: </span>
+
+                                <span class="hero__device-points-descr">Готов к работе</span>
+                            </li>
+
+                            <li class="hero__device-info-item">
+                                <span class="hero__device-points">Изготовитель: </span>
+
+                                <span class="hero__device-points-descr">Ohaus</span>
+                            </li>
+
+                            <li class="hero__device-info-item">
+                                <span class="hero__device-points">Модель: </span>
+
+                                <span class="hero__device-points-descr">AX-123</span>
+                            </li>
+
+                            <li class="hero__device-info-item">
+                                <span class="hero__device-points">Ответственное подразделение (ремонт): </span>
+
+                                <span class="hero__device-points-descr">Группа обслуживания лабораторного
+                                    оборудования</span>
+                            </li>
+
+                            <li class="hero__device-info-item">
+                                <span class="hero__device-points">Эксплуатирующее подразделение: </span>
+
+                                <span class="hero__device-points-descr">Химико-аналитическая лаборатория 2.0</span>
+                            </li>
+
+                            <li class="hero__device-info-item">
+                                <span class="hero__device-points">МОЛ: </span>
+
+                                <span class="hero__device-points-descr">Иванов Иван Иванович</span>
+                            </li>
+
+                            <li class="hero__device-info-item">
+                                <span class="hero__device-points">Территория: </span>
+
+                                <span class="hero__device-points-descr">г.Санкт-Петербург (Нойдорф)</span>
+                            </li>
+
+                            <li class="hero__device-info-item">
+                                <span class="hero__device-points">Серийный номер: </span>
+
+                                <span class="hero__device-points-descr">B715976163</span>
+                            </li>
+
+                            <li class="hero__device-info-item">
+                                <span class="hero__device-points">GUID: </span>
+
+                                <span class="hero__device-points-descr">
+                                    <a href="#" class="hero__descr-link">5O8b2a71-662e-4983-aeOc-3cbOc1cd21c5</a>
+                                </span>
+                            </li>
+
+
+                            <li class="hero__device-info-item">
+                                <span class="hero__device-points">Bims ID: </span>
+
+                                <span class="hero__device-points-descr">
+                                    <a href="#" class="hero__descr-link">49db8db1-585f-4b9e-bbfO-8a5969edc8b</a>
+                                </span>
+                            </li>
+
+
+                            <li class="hero__device-info-item">
+                                <span class="hero__device-points">Tam: </span>
+
+                                <span class="hero__device-points-descr">
+                                    <a href="#" class="hero__descr-link">A-OO1234</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="report">
+            <div class="container">
+                <div class="report__container">
+                    <table class="report__table">
+                        <caption>Calibration report</caption>
+                        <tr class="report__table-title-row">
+                            <th class="report__table-date-title">Date</th>
+
+                            <th class="report__table-solutions-title">Used buffer solutions</th>
+
+                            <th class="report__table-slope-title"><p class="slope-title-text">Slope, % Norm 95-105</p></th>
+
+                            <th class="report__table-offset-title"><p class="offset-title-text">Offset, mV</p>
+                                Norm
+                                ±(0-20)</th>
+
+                            <th class="report__table-user-title">User</th>
+                        </tr>
+
+
+                        <tr class="report__table-data-row">
+                            <td class="report__table-date-descr"><p class="date-descr-text">04.10.19
+                                10:23</p></td>
+
+                            <td class="report__table-solutions-descr">
+                                <div class="solutions-descr-box">
+                                    <span class="solutions-descr-data">В1: № 2000460789536: pH 1.09</span>
+                                    <span class="solutions-descr-data">В2: № 2000460789536: pH 2.00</span>
+                                    <span class="solutions-descr-data">В3: № 2000460789536: pH 4.01</span>
+                                    <span class="solutions-descr-data">В4: № 2000460789536: pH 7.00</span>
+                                    <span class="solutions-descr-data">В5: № 2000460789536: pH 9.21</span>
+                                </div>
+                            </td>
+
+                            <td class="report__table-slope-descr">
+                                <div class="slope-content-box">
+                                    <span class="slope-descr__content">98.7</span>
+                                    <span class="slope-descr__img"></span>
+                                </div>
+                            </td>
+
+                            <td class="report__table-offset-descr">
+                                <div class="offset-content-box">
+                                    <span class="offset-descr__content">-0.3</span>
+                                    <span class="offset-descr__img"></span>
+                                </div>
+                            </td>
+
+                            <td class="report__table-user-descr">Иванов Генадий Петрович</td>
+                        </tr>
+
+
+                        <tr class="report__table-data-row">
+                            <td class="report__table-date-descr"><p class="date-descr-text">04.10.19
+                                10:23</p></td>
+
+                            <td class="report__table-solutions-descr">
+                                <div class="solutions-descr-box">
+                                    <span class="solutions-descr-data">В1: № 2000460789536: pH 1.09</span>
+                                    <span class="solutions-descr-data">В2: № 2000460789536: pH 2.00</span>
+                                    <span class="solutions-descr-data">В3: № 2000460789536: pH 4.01</span>
+                                    <span class="solutions-descr-data">В4: № 2000460789536: pH 7.00</span>
+                                    <span class="solutions-descr-data">В5: № 2000460789536: pH 9.21</span>
+                                </div>
+                            </td>
+
+                            <td class="report__table-slope-descr">
+                                <div class="slope-content-box">
+                                    <span class="slope-descr__content">98.7</span>
+                                    <span class="slope-descr__img"></span>
+                                </div>
+                            </td>
+
+                            <td class="report__table-offset-descr">
+                                <div class="offset-content-box">
+                                    <span class="offset-descr__content">-0.3</span>
+                                    <span class="offset-descr__img"></span>
+                                </div>
+                            </td>
+
+                            <td class="report__table-user-descr">Петров Иван Геннадьевич</td>
+                        </tr>
+
+
+                        <tr class="report__table-data-row">
+                            <td class="report__table-date-descr"><p class="date-descr-text">04.10.19
+                                10:23</p></td>
+
+                            <td class="report__table-solutions-descr">
+                                <div class="solutions-descr-box">
+                                    <span class="solutions-descr-data">В1: № 2000460789536: pH 1.09</span>
+                                    <span class="solutions-descr-data">В2: № 2000460789536: pH 2.00</span>
+                                    <span class="solutions-descr-data">В3: № 2000460789536: pH 4.01</span>
+                                    <span class="solutions-descr-data">В4: № 2000460789536: pH 7.00</span>
+                                    <span class="solutions-descr-data">В5: № 2000460789536: pH 9.21</span>
+                                </div>
+                            </td>
+
+                            <td class="report__table-slope-descr">
+                                <div class="slope-content-box">
+                                    <span class="slope-descr__content">98.7</span>
+                                    <span class="slope-descr__img"></span>
+                                </div>
+                            </td>
+
+                            <td class="report__table-offset-descr">
+                                <div class="offset-content-box">
+                                    <span class="offset-descr__content">-0.3</span>
+                                    <span class="offset-descr__img"></span>
+                                </div>
+                            </td>
+
+                            <td class="report__table-user-descr">Петров Геннадий Иванович</td>
+                        </tr>
+
+
+                        <tr class="report__table-data-row">
+                            <td class="report__table-date-descr"><p class="date-descr-text">04.10.19
+                                10:23</p></td>
+
+                            <td class="report__table-solutions-descr">
+                                <div class="solutions-descr-box">
+                                    <span class="solutions-descr-data">В1: № 2000460789536: pH 1.09</span>
+                                    <span class="solutions-descr-data">В2: № 2000460789536: pH 2.00</span>
+                                    <span class="solutions-descr-data">В3: № 2000460789536: pH 4.01</span>
+                                    <span class="solutions-descr-data">В4: № 2000460789536: pH 7.00</span>
+                                    <span class="solutions-descr-data">В5: № 2000460789536: pH 9.21</span>
+                                </div>
+                            </td>
+
+                            <td class="report__table-slope-descr">
+                                <div class="slope-content-box">
+                                    <span class="slope-descr__content">98.7</span>
+                                    <span class="slope-descr__img error-img"></span>
+                                </div>
+                            </td>
+
+                            <td class="report__table-offset-descr">
+                                <div class="offset-content-box">
+                                    <span class="offset-descr__content">-0.5</span>
+                                    <span class="offset-descr__img"></span>
+                                </div>
+                            </td>
+
+                            <td class="report__table-user-descr">Геннадьев Иван Петрович</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/choices.min.js"></script>
+</body>
+
+</html>

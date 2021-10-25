@@ -1,0 +1,242 @@
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__equipment-info {
+    display: flex;
+    flex-direction: column;
+    width: calc(350 / 900 * 100%);
+}
+
+.hero__report-filters {
+    width: calc(350 / 900 * 100%);
+}
+
+.hero__device-info {
+    padding: 20px 18px;
+    width: calc(550 / 900 * 100%);
+    background-color: #F7F7F7;
+}
+
+.hero__descr-link {
+    color: #4990E2;
+}
+
+.hero__device-points {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8C8C8C;
+}
+
+.hero__device-points-descr {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #353535;
+}
+
+.hero__unit-descr {
+    margin-bottom: 35px;
+    padding-left: 60px;
+    padding-right: 35px;
+    width: 100%;
+    background-image: url('../img/hero-images/scale.png');
+    background-repeat: no-repeat;
+    background-position: left 0 top 20%;
+}
+
+.hero__unit-descr-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #353535;
+}
+
+.hero__device-info-item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+
+
+
+
+.choices {
+    margin-bottom: 19px;
+    width: 221px;
+}
+
+.choices[data-type*=select-one]:after {
+    content: '';
+    margin-top: 0;
+    top: 43%;
+    width: 10px;
+    height: 6.3px;
+    border-style: none;
+    background-image: url('../img/hero-images/select-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image;
+}
+
+.choices[data-type*=select-one].is-open:after {
+    margin-top: 0;
+    transition: background-image;
+    transform: rotate(180deg);
+}
+
+.choices__inner {
+    min-height: 30px;
+    padding-top: 2px;
+    border-radius: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #353535;
+    background-color: transparent;
+    border: 1px solid #E9E9E9;
+}
+
+.choices__placeholder {
+    opacity: 1;
+    color: #353535;
+}
+
+.is-selected {
+    display: none;
+}
+
+.choices__list--single {
+    padding: 0 16px 0 4px;
+}
+
+.choices[data-type*=select-one] .choices__inner {
+    padding-bottom: 0;
+}
+
+.hero__form-label {
+    padding-left: 25px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #353535;
+}
+
+.hero__form-label:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.hero__form-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.hero__labels-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 51px;
+}
+
+.hero__form-checkbox {
+    position: absolute;
+    margin-left: -25px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #C1C1C1;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.hero__form-input:checked + .hero__form-checkbox {
+    background-image: url('../img/hero-images/checkbox.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero__form-button {
+    width: 180px;
+    min-height: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;   
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    background-color: #4990E2;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity .2s ease-in-out;
+}
+
+.hero__form-button:hover {
+    opacity: 1;
+}
+
+
+@media(max-width: 714px) {
+    .hero__equipment-info {
+        display: flex;
+        flex-direction: column;
+        width: calc(350 / 714 * 100%);
+    }
+    
+    .hero__report-filters {
+        width: calc(350 / 714 * 100%);
+    }
+    
+    .hero__device-info {
+        padding: 20px 18px;
+        width: calc(550 / 714 * 100%);
+        background-color: #F7F7F7;
+    }
+}
+
+
+@media(max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    .hero__container {
+        flex-direction: column;
+    }
+
+    .hero__equipment-info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .hero__report-filters {
+        width: 100%;
+    }
+    
+    .hero__device-info {
+        padding: 20px 18px;
+        width: 100%;
+        background-color: #F7F7F7;
+    }
+
+    .hero__unit-descr {
+        padding-right: 0;
+    }
+
+    .hero__labels-container {
+        margin-bottom: 15px;
+    }
+    
+    .hero__unit-descr-text {
+        max-width: 80%;
+    }
+}
