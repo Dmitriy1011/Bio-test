@@ -1,7 +1,11 @@
-.report__container {
-    padding: 83px 40px 60px 40px;
+.report .container {
+    padding-bottom: 106px;
 }
 
+.report__container {
+    padding: 37px 40px 60px 40px;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, .1);
+}
 
 .report__table caption {
     margin-bottom: 27px;
@@ -11,28 +15,65 @@
     text-align: start;
 }
 
-.report__table th {
+
+tbody tr:nth-child(1),
+tbody tr:nth-child(2),
+tbody tr:nth-child(3) {
+    border-bottom: 1px solid #E9E9E9;
+}
+
+thead th {
     font-size: 13px;
     line-height: 15px;
     font-weight: 400;
     color: #939DA6;
     text-align: start;
-    border-bottom: 1px solid #E9E9E9;
+    vertical-align: top;
 }
 
-.report__table td { 
+tbody td { 
     padding: 20px 0;
-    border-bottom: 1px solid #E9E9E9;
     vertical-align: top;
 }
 
 
-
-.report__table-date-descr {
-    width: calc(63 / 820 * 100%);
+tbody tr td:nth-child(1) {
+    width: 14%;
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
+    color: #353535;
+}
+
+tbody tr td:nth-child(2) {
+    width: 30%;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #353535;   
+}
+
+tbody tr td:nth-child(3) {
+    width: 15%;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #353535;
+}
+
+tbody tr td:nth-child(4) {
+    width: 15%;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #353535;
+}
+
+tbody tr td:nth-child(5) {
+    width: 30%;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
     color: #353535;
 }
 
@@ -40,36 +81,15 @@
     max-width: 60%;
 }
 
-
-.report__table-solutions-descr {
-    width: calc(135 / 820 * 100%);
-    font-size: 13px;
-    line-height: 15px;
-    font-weight: 400;
-    color: #353535;   
-}
-
 .solutions-descr-box {
     display: flex;
     flex-direction: column;
 }
 
-
-.report__table-slope-descr {
-    width: calc(66 / 820 * 100%);
-    font-size: 13px;
-    line-height: 15px;
-    font-weight: 400;
-    color: #353535;
+.solutions-descr-data:not(:last-child) {
+    margin-bottom: 1px;
 }
 
-.report__table-offset-descr {
-    width: calc(66 / 820 * 100%);
-    font-size: 13px;
-    line-height: 15px;
-    font-weight: 400;
-    color: #353535;
-}
 
 .slope-content-box,
 .offset-content-box {
@@ -83,15 +103,7 @@
 }
 
 .slope-title-text {
-    max-width: 70%;
-}
-
-.report__table-user-descr {
-    width: calc(120 / 820 * 100%);
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    color: #353535;
+    max-width: 65%;
 }
 
 .offset-descr__img,
@@ -118,42 +130,77 @@
 
 @media (max-width: 768px) {
     .report__table-user-descr {
-        width: calc(120 / 992 * 100%);
         font-weight: normal;
         font-size: 12px;
         line-height: 14px;
         color: #353535;
+    }
+
+    .solutions-descr-data:not(:last-child) {
+        margin-bottom: 5px;
     }
 }
 
 
 @media (max-width: 576px) {
     .report__container {
-        padding: 40px 0px 60px 0px;
+        padding: 40px 0 60px 0;
     }
 
-
-    .report__table-date-descr {
-        font-size: 11px;
-        line-height: 13px;
+    .report__table-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
-    .report__table-solutions-descr {
+    tbody tr td:nth-child(1) {
+        width: 17%;
         font-size: 11px;
         line-height: 13px;
         font-weight: 400;
-        color: #353535; 
+        color: #353535;
     }
-
-    .report__table-slope-descr,
-    .report__table-offset-descr {
+    
+    tbody tr td:nth-child(2) {
+        padding-left: 5px;
+        width: 33%;
         font-size: 11px;
         line-height: 13px;
+        font-weight: 400;
+        color: #353535;   
     }
-
-    .report__table-user-descr {
+    
+    tbody tr td:nth-child(3) {
+        padding-left: 5px;
+        width: 10%;
         font-size: 11px;
         line-height: 13px;
+        font-weight: 400;
+        color: #353535;
+    }
+    
+    tbody tr td:nth-child(4) {
+        padding-left: 5px;
+        width: 10%;
+        font-size: 11px;
+        line-height: 13px;
+        font-weight: 400;
+        color: #353535;
+    }
+    
+    tbody tr td:nth-child(5) {
+        width: 10%;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 13px;
+        color: #353535;
+    }
+
+    .solutions-descr-data:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+    thead th:nth-child(5) {
+        padding-left: 5px;
     }
 
     .slope-descr__content,

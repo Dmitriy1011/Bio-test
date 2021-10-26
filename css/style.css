@@ -21,7 +21,9 @@ html {
     line-height: 1;
     color: black;
     background-color: #E5E5E5;
+    box-sizing: border-box;
   }
+
   
   .container {
     margin: 0 auto;
@@ -68,6 +70,11 @@ html {
   h1, h2, h3, p {
     padding: 0;
     margin: 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
   }
 
   

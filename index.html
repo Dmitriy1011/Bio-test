@@ -172,150 +172,167 @@
         <section class="report">
             <div class="container">
                 <div class="report__container">
-                    <table class="report__table">
-                        <caption>Calibration report</caption>
-                        <tr class="report__table-title-row">
-                            <th class="report__table-date-title">Date</th>
+                    <div class="report__table-wrapper">
+                        <table class="report__table">
+                            <caption>Calibration report</caption>
+                            <thead>
+                                <tr class="report__table-title-row">
+                                    <th class="report__table-date-title">Date</th>
 
-                            <th class="report__table-solutions-title">Used buffer solutions</th>
+                                    <th class="report__table-solutions-title">Used buffer solutions</th>
 
-                            <th class="report__table-slope-title"><p class="slope-title-text">Slope, % Norm 95-105</p></th>
+                                    <th class="report__table-slope-title">
+                                        <p class="slope-title-text">Slope, % Norm 95-105</p>
+                                    </th>
 
-                            <th class="report__table-offset-title"><p class="offset-title-text">Offset, mV</p>
-                                Norm
-                                ±(0-20)</th>
+                                    <th class="report__table-offset-title">
+                                        <p class="offset-title-text">Offset, mV</p>
+                                        Norm
+                                        ±(0-20)
+                                    </th>
 
-                            <th class="report__table-user-title">User</th>
-                        </tr>
+                                    <th class="report__table-user-title">User</th>
+                                </tr>
+                            </thead>
 
+                            <tbody>
+                                <tr>
+                                    <td class="report__table-date-descr">
+                                        <p class="date-descr-text">04.10.19
+                                            10:23</p>
+                                    </td>
 
-                        <tr class="report__table-data-row">
-                            <td class="report__table-date-descr"><p class="date-descr-text">04.10.19
-                                10:23</p></td>
+                                    <td class="report__table-solutions-descr">
+                                        <div class="solutions-descr-box">
+                                            <span class="solutions-descr-data">В1: № 2000460789536: pH 1.09</span>
+                                            <span class="solutions-descr-data">В2: № 2000460789536: pH 2.00</span>
+                                            <span class="solutions-descr-data">В3: № 2000460789536: pH 4.01</span>
+                                            <span class="solutions-descr-data">В4: № 2000460789536: pH 7.00</span>
+                                            <span class="solutions-descr-data">В5: № 2000460789536: pH 9.21</span>
+                                        </div>
+                                    </td>
 
-                            <td class="report__table-solutions-descr">
-                                <div class="solutions-descr-box">
-                                    <span class="solutions-descr-data">В1: № 2000460789536: pH 1.09</span>
-                                    <span class="solutions-descr-data">В2: № 2000460789536: pH 2.00</span>
-                                    <span class="solutions-descr-data">В3: № 2000460789536: pH 4.01</span>
-                                    <span class="solutions-descr-data">В4: № 2000460789536: pH 7.00</span>
-                                    <span class="solutions-descr-data">В5: № 2000460789536: pH 9.21</span>
-                                </div>
-                            </td>
+                                    <td class="report__table-slope-descr">
+                                        <div class="slope-content-box">
+                                            <span class="slope-descr__content">98.7</span>
+                                            <span class="slope-descr__img"></span>
+                                        </div>
+                                    </td>
 
-                            <td class="report__table-slope-descr">
-                                <div class="slope-content-box">
-                                    <span class="slope-descr__content">98.7</span>
-                                    <span class="slope-descr__img"></span>
-                                </div>
-                            </td>
+                                    <td class="report__table-offset-descr">
+                                        <div class="offset-content-box">
+                                            <span class="offset-descr__content">-0.3</span>
+                                            <span class="offset-descr__img"></span>
+                                        </div>
+                                    </td>
 
-                            <td class="report__table-offset-descr">
-                                <div class="offset-content-box">
-                                    <span class="offset-descr__content">-0.3</span>
-                                    <span class="offset-descr__img"></span>
-                                </div>
-                            </td>
-
-                            <td class="report__table-user-descr">Иванов Генадий Петрович</td>
-                        </tr>
-
-
-                        <tr class="report__table-data-row">
-                            <td class="report__table-date-descr"><p class="date-descr-text">04.10.19
-                                10:23</p></td>
-
-                            <td class="report__table-solutions-descr">
-                                <div class="solutions-descr-box">
-                                    <span class="solutions-descr-data">В1: № 2000460789536: pH 1.09</span>
-                                    <span class="solutions-descr-data">В2: № 2000460789536: pH 2.00</span>
-                                    <span class="solutions-descr-data">В3: № 2000460789536: pH 4.01</span>
-                                    <span class="solutions-descr-data">В4: № 2000460789536: pH 7.00</span>
-                                    <span class="solutions-descr-data">В5: № 2000460789536: pH 9.21</span>
-                                </div>
-                            </td>
-
-                            <td class="report__table-slope-descr">
-                                <div class="slope-content-box">
-                                    <span class="slope-descr__content">98.7</span>
-                                    <span class="slope-descr__img"></span>
-                                </div>
-                            </td>
-
-                            <td class="report__table-offset-descr">
-                                <div class="offset-content-box">
-                                    <span class="offset-descr__content">-0.3</span>
-                                    <span class="offset-descr__img"></span>
-                                </div>
-                            </td>
-
-                            <td class="report__table-user-descr">Петров Иван Геннадьевич</td>
-                        </tr>
+                                    <td class="report__table-user-descr">Иванов Генадий Петрович</td>
+                                </tr>
 
 
-                        <tr class="report__table-data-row">
-                            <td class="report__table-date-descr"><p class="date-descr-text">04.10.19
-                                10:23</p></td>
+                                <tr class="report__table-data-row">
+                                    <td class="report__table-date-descr">
+                                        <p class="date-descr-text">04.10.19
+                                            10:23</p>
+                                    </td>
 
-                            <td class="report__table-solutions-descr">
-                                <div class="solutions-descr-box">
-                                    <span class="solutions-descr-data">В1: № 2000460789536: pH 1.09</span>
-                                    <span class="solutions-descr-data">В2: № 2000460789536: pH 2.00</span>
-                                    <span class="solutions-descr-data">В3: № 2000460789536: pH 4.01</span>
-                                    <span class="solutions-descr-data">В4: № 2000460789536: pH 7.00</span>
-                                    <span class="solutions-descr-data">В5: № 2000460789536: pH 9.21</span>
-                                </div>
-                            </td>
+                                    <td class="report__table-solutions-descr">
+                                        <div class="solutions-descr-box">
+                                            <span class="solutions-descr-data">В1: № 2000460789536: pH 1.09</span>
+                                            <span class="solutions-descr-data">В2: № 2000460789536: pH 2.00</span>
+                                            <span class="solutions-descr-data">В3: № 2000460789536: pH 4.01</span>
+                                            <span class="solutions-descr-data">В4: № 2000460789536: pH 7.00</span>
+                                            <span class="solutions-descr-data">В5: № 2000460789536: pH 9.21</span>
+                                        </div>
+                                    </td>
 
-                            <td class="report__table-slope-descr">
-                                <div class="slope-content-box">
-                                    <span class="slope-descr__content">98.7</span>
-                                    <span class="slope-descr__img"></span>
-                                </div>
-                            </td>
+                                    <td class="report__table-slope-descr">
+                                        <div class="slope-content-box">
+                                            <span class="slope-descr__content">98.7</span>
+                                            <span class="slope-descr__img"></span>
+                                        </div>
+                                    </td>
 
-                            <td class="report__table-offset-descr">
-                                <div class="offset-content-box">
-                                    <span class="offset-descr__content">-0.3</span>
-                                    <span class="offset-descr__img"></span>
-                                </div>
-                            </td>
+                                    <td class="report__table-offset-descr">
+                                        <div class="offset-content-box">
+                                            <span class="offset-descr__content">-0.3</span>
+                                            <span class="offset-descr__img"></span>
+                                        </div>
+                                    </td>
 
-                            <td class="report__table-user-descr">Петров Геннадий Иванович</td>
-                        </tr>
+                                    <td class="report__table-user-descr">Петров Иван Геннадьевич</td>
+                                </tr>
 
 
-                        <tr class="report__table-data-row">
-                            <td class="report__table-date-descr"><p class="date-descr-text">04.10.19
-                                10:23</p></td>
+                                <tr class="report__table-data-row">
+                                    <td class="report__table-date-descr">
+                                        <p class="date-descr-text">04.10.19
+                                            10:23</p>
+                                    </td>
 
-                            <td class="report__table-solutions-descr">
-                                <div class="solutions-descr-box">
-                                    <span class="solutions-descr-data">В1: № 2000460789536: pH 1.09</span>
-                                    <span class="solutions-descr-data">В2: № 2000460789536: pH 2.00</span>
-                                    <span class="solutions-descr-data">В3: № 2000460789536: pH 4.01</span>
-                                    <span class="solutions-descr-data">В4: № 2000460789536: pH 7.00</span>
-                                    <span class="solutions-descr-data">В5: № 2000460789536: pH 9.21</span>
-                                </div>
-                            </td>
+                                    <td class="report__table-solutions-descr">
+                                        <div class="solutions-descr-box">
+                                            <span class="solutions-descr-data">В1: № 2000460789536: pH 1.09</span>
+                                            <span class="solutions-descr-data">В2: № 2000460789536: pH 2.00</span>
+                                            <span class="solutions-descr-data">В3: № 2000460789536: pH 4.01</span>
+                                            <span class="solutions-descr-data">В4: № 2000460789536: pH 7.00</span>
+                                            <span class="solutions-descr-data">В5: № 2000460789536: pH 9.21</span>
+                                        </div>
+                                    </td>
 
-                            <td class="report__table-slope-descr">
-                                <div class="slope-content-box">
-                                    <span class="slope-descr__content">98.7</span>
-                                    <span class="slope-descr__img error-img"></span>
-                                </div>
-                            </td>
+                                    <td class="report__table-slope-descr">
+                                        <div class="slope-content-box">
+                                            <span class="slope-descr__content">98.7</span>
+                                            <span class="slope-descr__img"></span>
+                                        </div>
+                                    </td>
 
-                            <td class="report__table-offset-descr">
-                                <div class="offset-content-box">
-                                    <span class="offset-descr__content">-0.5</span>
-                                    <span class="offset-descr__img"></span>
-                                </div>
-                            </td>
+                                    <td class="report__table-offset-descr">
+                                        <div class="offset-content-box">
+                                            <span class="offset-descr__content">-0.3</span>
+                                            <span class="offset-descr__img"></span>
+                                        </div>
+                                    </td>
 
-                            <td class="report__table-user-descr">Геннадьев Иван Петрович</td>
-                        </tr>
-                    </table>
+                                    <td class="report__table-user-descr">Петров Геннадий Иванович</td>
+                                </tr>
+
+
+                                <tr class="report__table-data-row">
+                                    <td class="report__table-date-descr">
+                                        <p class="date-descr-text">04.10.19
+                                            10:23</p>
+                                    </td>
+
+                                    <td class="report__table-solutions-descr">
+                                        <div class="solutions-descr-box">
+                                            <span class="solutions-descr-data">В1: № 2000460789536: pH 1.09</span>
+                                            <span class="solutions-descr-data">В2: № 2000460789536: pH 2.00</span>
+                                            <span class="solutions-descr-data">В3: № 2000460789536: pH 4.01</span>
+                                            <span class="solutions-descr-data">В4: № 2000460789536: pH 7.00</span>
+                                            <span class="solutions-descr-data">В5: № 2000460789536: pH 9.21</span>
+                                        </div>
+                                    </td>
+
+                                    <td class="report__table-slope-descr">
+                                        <div class="slope-content-box">
+                                            <span class="slope-descr__content">98.7</span>
+                                            <span class="slope-descr__img error-img"></span>
+                                        </div>
+                                    </td>
+
+                                    <td class="report__table-offset-descr">
+                                        <div class="offset-content-box">
+                                            <span class="offset-descr__content">-0.5</span>
+                                            <span class="offset-descr__img"></span>
+                                        </div>
+                                    </td>
+
+                                    <td class="report__table-user-descr">Геннадьев Иван Петрович</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>

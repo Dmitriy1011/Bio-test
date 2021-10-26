@@ -1,6 +1,7 @@
 .hero__container {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 46px;
 }
 
 .hero__equipment-info {
@@ -201,6 +202,8 @@
         background-color: #F7F7F7;
     }
 }
+
+
 
 
 @media(max-width: 576px) {
